@@ -1,44 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-
-h1 {
-  font-size: 3em;
-  font-weight: bold;
-  text-align: center;
-}
-
-main {
+header {
   display: flex;
-  flex-direction: column;
-  border: 2px, solid, red;
-}
-h2 {
-  text-align: center;
-  font-weight: bold;
-  font-size: 2em;
-}
-
-label {
-  text-align: center;
-  font-size: 1.5em;
+  justify-content: center;
+  align-items: center;
+  margin: 3em;
 }
 input {
   margin: 1em;
   border: solid 1px #2e5077;
   box-shadow: 7px 3px 3px #2e5077;
-  padding: 0.3em;
-}
-p {
-  text-align: center;
-  font-size: 1.5em;
-}
-
-img {
-  width: 80px;
-  height: 80 px;
-  align-items: center;
+  padding: 0.5em;
 }
