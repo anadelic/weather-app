@@ -1,5 +1,4 @@
 import './App.css';
-import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 
 export default function App() {
@@ -21,7 +20,7 @@ export default function App() {
     <body>
       <header>
         <input onChange={(e) => setGetCity(e.target.value)} value={getCity} />
-        <button onClick={(e) => setCity(getCity)}>Search</button>
+        <button onClick={() => setCity(getCity)}>Search</button>
       </header>
       <main>
         <h1> {apiData.name}</h1>
