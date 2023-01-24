@@ -13,7 +13,7 @@ export default function App() {
     fetch(url)
       .then((res) => res.json())
       .then((data) => setApiData(data))
-      .catch(() => alert('We could not find that template.'));
+      .catch(() => alert('error'));
   }, [url]);
 
   return (
