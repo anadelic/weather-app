@@ -28,15 +28,14 @@ export default function App() {
       </header>
       <main>
         <h1> {apiData.name}</h1>
-        <h2>{Math.round(apiData.main?.temp - 273)} °C</h2>
-        <p>Humidity: {apiData.main?.humidity} %</p>
-
+        <h2>{Math.round(apiData.main?.temp - 273)}°C</h2>
+        <p>Humidity: {apiData.main?.humidity}%</p>
         <section>
           <div className="tempMaxMin">
-            <p>High: {Math.round(apiData.main?.temp_max - 273)} °C</p>{' '}
+            <p>High: {Math.round(apiData.main?.temp_max - 273)}°C</p>
           </div>
           <div className="tempMaxMin">
-            <p>Low: {Math.round(apiData.main?.temp_min - 273)} °C</p>{' '}
+            <p>Low: {Math.round(apiData.main?.temp_min - 273)}°C</p>
           </div>
         </section>
       </main>
