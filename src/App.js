@@ -6,9 +6,9 @@ export default function App() {
   const [city, setCity] = useState('London');
   const [getCity, setGetCity] = useState('');
 
-  const ApiKey = process.env.REACT_APP_API_KEY;
+  const apiKey = process.env.REACT_APP_API_KEY;
 
-  const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${ApiKey}`;
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
 
   useEffect(() => {
     fetch(url)
